@@ -76,7 +76,7 @@ export default function FeaturedStory() {
               <div className="absolute top-4 right-4 bg-white rounded-xl p-3 shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary" data-testid="text-page-count">15</div>
-                  <div className="text-xs text-foreground/70">páginas</div>
+                  <div className="text-xs text-foreground/70">{t('text.pagesLabel')}</div>
                 </div>
               </div>
 

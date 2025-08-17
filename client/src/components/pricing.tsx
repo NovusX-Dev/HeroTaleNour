@@ -37,25 +37,25 @@ export default function Pricing() {
               <div className="space-y-4">
                 <div className="text-center">
                   <span className="text-4xl font-bold text-primary" data-testid="price-digital">R$ 39</span>
-                  <span className="text-foreground/70 ml-2">uma vez</span>
+                  <span className="text-foreground/70 ml-2">{t('pricing.oneTime')}</span>
                 </div>
                 
                 <ul className="space-y-3 text-left">
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>15 páginas personalizadas</span>
+                    <span>{t('pricing.digital.feature1')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Download imediato (PDF)</span>
+                    <span>{t('pricing.digital.feature2')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Leitura em tablets e smartphones</span>
+                    <span>{t('pricing.digital.feature3')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Qualidade HD para impressão caseira</span>
+                    <span>{t('pricing.digital.feature4')}</span>
                   </li>
                 </ul>
               </div>
@@ -90,30 +90,30 @@ export default function Pricing() {
               <div className="space-y-4">
                 <div className="text-center">
                   <span className="text-4xl font-bold text-accent" data-testid="price-print">R$ 89</span>
-                  <span className="text-foreground/70 ml-2">+ frete</span>
+                  <span className="text-foreground/70 ml-2">{t('pricing.plusShipping')}</span>
                   <div className="text-sm text-foreground/50 line-through" data-testid="price-original">R$ 120</div>
                 </div>
                 
                 <ul className="space-y-3 text-left">
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Livro físico capa dura (21x21cm)</span>
+                    <span>{t('pricing.print.feature1')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Papel couché de alta qualidade</span>
+                    <span>{t('pricing.print.feature2')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Versão digital incluída</span>
+                    <span>{t('pricing.print.feature3')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Entrega em 7-10 dias úteis</span>
+                    <span>{t('pricing.print.feature4')}</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <Check className="h-5 w-5 text-green-500" />
-                    <span>Embalagem presente grátis</span>
+                    <span>{t('pricing.print.feature5')}</span>
                   </li>
                 </ul>
               </div>
@@ -129,15 +129,15 @@ export default function Pricing() {
           <div className="flex items-center justify-center space-x-6 text-foreground/70">
             <div className="flex items-center space-x-2">
               <Shield className="h-5 w-5 text-green-500" />
-              <span>Pagamento 100% Seguro</span>
+              <span>{t('pricing.securePayment')}</span>
             </div>
             <div className="flex items-center space-x-2">
               <Truck className="h-5 w-5 text-primary" />
-              <span>Frete para todo Brasil</span>
+              <span>{t('pricing.shippingBrazil')}</span>
             </div>
             <div className="flex items-center space-x-2">
               <RotateCcw className="h-5 w-5 text-secondary" />
-              <span>Garantia de 30 dias</span>
+              <span>{t('pricing.guarantee')}</span>
             </div>
           </div>
         </div>

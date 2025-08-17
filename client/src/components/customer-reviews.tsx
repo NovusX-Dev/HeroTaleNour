@@ -1,36 +1,37 @@
+import React from "react";
 import { Star } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-
-const reviews = [
-  {
-    id: 1,
-    rating: 5,
-    text: "Minha filha ficou encantada ao se ver como protagonista da aventura na Amazônia! Ela pede para lermos todos os dias antes de dormir. É mágico ver os olhinhos dela brilhando.",
-    author: "Carla Santos",
-    role: "Mãe da Sophia, 5 anos",
-    avatar: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&w=60&h=60&fit=crop&crop=face"
-  },
-  {
-    id: 2,
-    rating: 5,
-    text: "Que presente incrível! O processo foi super fácil e o resultado ficou perfeito. O Lucas se diverte vendo ele mesmo salvando a floresta. Educativo e emocionante!",
-    author: "Roberto Silva",
-    role: "Pai do Lucas, 6 anos",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=60&h=60&fit=crop&crop=face"
-  },
-  {
-    id: 3,
-    rating: 5,
-    text: "Comprei para presente de aniversário e foi um sucesso total! A qualidade de impressão é excelente e a história ensina valores importantes de forma divertida.",
-    author: "Maria Oliveira",
-    role: "Avó da Ana Clara, 7 anos",
-    avatar: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&w=60&h=60&fit=crop&crop=face"
-  }
-];
 
 export default function CustomerReviews() {
   const { t } = useLanguage();
   
+  const reviews = [
+    {
+      id: 1,
+      rating: 5,
+      text: t('reviews.review1.text'),
+      author: t('reviews.review1.author'),
+      role: t('reviews.review1.role'),
+      avatar: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&w=60&h=60&fit=crop&crop=face"
+    },
+    {
+      id: 2,
+      rating: 5,
+      text: t('reviews.review2.text'),
+      author: t('reviews.review2.author'),
+      role: t('reviews.review2.role'),
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=60&h=60&fit=crop&crop=face"
+    },
+    {
+      id: 3,
+      rating: 5,
+      text: t('reviews.review3.text'),
+      author: t('reviews.review3.author'),
+      role: t('reviews.review3.role'),
+      avatar: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&w=60&h=60&fit=crop&crop=face"
+    }
+  ];
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

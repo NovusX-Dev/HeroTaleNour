@@ -148,6 +148,47 @@ const translations = {
     'toast.paymentSuccess': 'Pagamento Realizado!',
     'toast.paymentSuccess.desc': 'Seu livro será processado e enviado em breve.',
     'toast.paymentError': 'Erro no Pagamento',
+    
+    // Additional texts
+    'text.new': 'Novo!',
+    'text.pagesLabel': 'páginas',
+    
+    // Pricing features
+    'pricing.oneTime': 'uma vez',
+    'pricing.plusShipping': '+ frete',
+    'pricing.digital.feature1': '15 páginas personalizadas',
+    'pricing.digital.feature2': 'Download imediato (PDF)',
+    'pricing.digital.feature3': 'Leitura em tablets e smartphones',
+    'pricing.digital.feature4': 'Qualidade HD para impressão caseira',
+    'pricing.print.feature1': 'Livro físico capa dura (21x21cm)',
+    'pricing.print.feature2': 'Papel couché de alta qualidade',
+    'pricing.print.feature3': 'Versão digital incluída',
+    'pricing.print.feature4': 'Entrega em 7-10 dias úteis',
+    'pricing.print.feature5': 'Embalagem presente grátis',
+    'pricing.securePayment': 'Pagamento 100% Seguro',
+    'pricing.shippingBrazil': 'Frete para todo Brasil',
+    'pricing.guarantee': 'Garantia de 30 dias',
+    
+    // Customer Reviews
+    'reviews.review1.text': 'Minha filha ficou encantada ao se ver como protagonista da aventura na Amazônia! Ela pede para lermos todos os dias antes de dormir. É mágico ver os olhinhos dela brilhando.',
+    'reviews.review1.author': 'Carla Santos',
+    'reviews.review1.role': 'Mãe da Sophia, 5 anos',
+    'reviews.review2.text': 'Que presente incrível! O processo foi super fácil e o resultado ficou perfeito. O Lucas se diverte vendo ele mesmo salvando a floresta. Educativo e emocionante!',
+    'reviews.review2.author': 'Roberto Silva',
+    'reviews.review2.role': 'Pai do Lucas, 6 anos',
+    'reviews.review3.text': 'Comprei para presente de aniversário e foi um sucesso total! A qualidade de impressão é excelente e a história ensina valores importantes de forma divertida.',
+    'reviews.review3.author': 'Maria Oliveira',
+    'reviews.review3.role': 'Avó da Ana Clara, 7 anos',
+    
+    // FAQ
+    'faq.question1': 'Quanto tempo demora para criar a história?',
+    'faq.answer1': 'A criação da história personalizada leva apenas alguns minutos após o upload da foto. Você receberá uma prévia imediata e poderá revisar antes de finalizar a compra.',
+    'faq.question2': 'A história é adequada para que idade?',
+    'faq.answer2': 'Nossa aventura amazônica foi especialmente desenvolvida para crianças de 4 a 8 anos, com linguagem apropriada e valores educativos para cada faixa etária.',
+    'faq.question3': 'Posso fazer alterações após a compra?',
+    'faq.answer3': 'Sim! Você pode solicitar alterações no nome ou trocar a foto antes da impressão. Para livros digitais, oferecemos uma revisão gratuita dentro de 24 horas.',
+    'faq.question4': 'Qual o prazo de entrega para livros impressos?',
+    'faq.answer4': 'A produção leva 3-5 dias úteis e a entrega varia de 5-12 dias úteis dependendo da sua região. Você receberá código de rastreamento para acompanhar o envio.',
   },
   'en-us': {
     // Header
@@ -288,6 +329,47 @@ const translations = {
     'toast.paymentSuccess': 'Payment Successful!',
     'toast.paymentSuccess.desc': 'Your book will be processed and sent soon.',
     'toast.paymentError': 'Payment Error',
+    
+    // Additional texts
+    'text.new': 'New!',
+    'text.pagesLabel': 'pages',
+    
+    // Pricing features
+    'pricing.oneTime': 'one time',
+    'pricing.plusShipping': '+ shipping',
+    'pricing.digital.feature1': '15 personalized pages',
+    'pricing.digital.feature2': 'Instant download (PDF)',
+    'pricing.digital.feature3': 'Read on tablets and smartphones',
+    'pricing.digital.feature4': 'HD quality for home printing',
+    'pricing.print.feature1': 'Hardcover physical book (21x21cm)',
+    'pricing.print.feature2': 'High quality couché paper',
+    'pricing.print.feature3': 'Digital version included',
+    'pricing.print.feature4': 'Delivery in 7-10 business days',
+    'pricing.print.feature5': 'Free gift wrapping',
+    'pricing.securePayment': '100% Secure Payment',
+    'pricing.shippingBrazil': 'Shipping across Brazil',
+    'pricing.guarantee': '30-day guarantee',
+    
+    // Customer Reviews
+    'reviews.review1.text': 'My daughter was enchanted to see herself as the protagonist of the Amazon adventure! She asks us to read it every night before bed. It\'s magical to see her little eyes shine.',
+    'reviews.review1.author': 'Carla Santos',
+    'reviews.review1.role': 'Mother of Sophia, 5 years old',
+    'reviews.review2.text': 'What an incredible gift! The process was super easy and the result was perfect. Lucas has fun seeing himself saving the forest. Educational and exciting!',
+    'reviews.review2.author': 'Roberto Silva',
+    'reviews.review2.role': 'Father of Lucas, 6 years old',
+    'reviews.review3.text': 'I bought it as a birthday gift and it was a total success! The print quality is excellent and the story teaches important values in a fun way.',
+    'reviews.review3.author': 'Maria Oliveira',
+    'reviews.review3.role': 'Grandmother of Ana Clara, 7 years old',
+    
+    // FAQ
+    'faq.question1': 'How long does it take to create the story?',
+    'faq.answer1': 'Creating the personalized story takes just a few minutes after uploading the photo. You\'ll receive an immediate preview and can review before finalizing the purchase.',
+    'faq.question2': 'What age is the story suitable for?',
+    'faq.answer2': 'Our Amazon adventure was specially developed for children aged 4 to 8 years, with appropriate language and educational values for each age group.',
+    'faq.question3': 'Can I make changes after purchase?',
+    'faq.answer3': 'Yes! You can request changes to the name or change the photo before printing. For digital books, we offer a free revision within 24 hours.',
+    'faq.question4': 'What is the delivery time for printed books?',
+    'faq.answer4': 'Production takes 3-5 business days and delivery varies from 5-12 business days depending on your region. You\'ll receive a tracking code to follow the shipment.',
   }
 };
 
