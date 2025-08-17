@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 import Header from "@/components/header";
 import PhotoUpload from "@/components/photo-upload";
 import StoryPreview from "@/components/story-preview";
@@ -29,6 +30,7 @@ interface PersonalizedStory {
 export default function CreateStory() {
   const [, setLocation] = useLocation();
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [uploadData, setUploadData] = useState<{
     childName: string;
     childAge: number;
@@ -44,14 +46,14 @@ export default function CreateStory() {
     onSuccess: (data: PersonalizedStory) => {
       setPersonalizedStory(data);
       toast({
-        title: "História Personalizada!",
-        description: "Sua história foi criada com sucesso. Confira a prévia!",
+        title: t('toast.storyPersonalized'),
+        description: t('toast.storyPersonalized.desc'),
       });
     },
     onError: (error: any) => {
       toast({
-        title: "Erro ao Personalizar",
-        description: error.message || "Não foi possível personalizar a história. Tente novamente.",
+        title: t('toast.error.personalize'),
+        description: error.message || t('toast.error.personalize.desc'),
         variant: "destructive",
       });
     },
@@ -60,8 +62,8 @@ export default function CreateStory() {
   const handleGenerate = () => {
     if (!uploadData.childName.trim()) {
       toast({
-        title: "Nome Obrigatório",
-        description: "Por favor, insira o nome da criança.",
+        title: t('toast.nameRequired'),
+        description: t('toast.nameRequired.desc'),
         variant: "destructive",
       });
       return;
@@ -69,8 +71,8 @@ export default function CreateStory() {
 
     if (!uploadData.childAge || uploadData.childAge < 4 || uploadData.childAge > 8) {
       toast({
-        title: "Idade Inválida",
-        description: "Por favor, selecione uma idade entre 4 e 8 anos.",
+        title: t('toast.ageInvalid'),
+        description: t('toast.ageInvalid.desc'),
         variant: "destructive",
       });
       return;
@@ -78,8 +80,8 @@ export default function CreateStory() {
 
     if (!uploadData.photo) {
       toast({
-        title: "Foto Obrigatória",
-        description: "Por favor, faça upload de uma foto da criança.",
+        title: t('toast.photoRequired'),
+        description: t('toast.photoRequired.desc'),
         variant: "destructive",
       });
       return;
@@ -123,10 +125,10 @@ export default function CreateStory() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-12">
             <h2 className="font-poppins text-4xl font-bold text-foreground">
-              Personalize Sua História
+              {t('createStory.title')}
             </h2>
             <p className="text-xl text-foreground/70">
-              Vamos criar uma aventura única para seu pequeno herói
+              {t('createStory.subtitle')}
             </p>
           </div>
 
@@ -148,7 +150,7 @@ export default function CreateStory() {
                   className="bg-primary text-white px-8 py-4 rounded-xl hover:bg-primary/90 transition-colors font-poppins font-semibold text-lg shadow-lg"
                   data-testid="button-proceed-checkout"
                 >
-                  Continuar para Checkout
+                  {t('button.proceedCheckout')}
                 </button>
               </div>
             )}

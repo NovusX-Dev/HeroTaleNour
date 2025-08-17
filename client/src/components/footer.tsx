@@ -1,7 +1,10 @@
 import { Link } from "wouter";
 import { BookOpen, Facebook, Instagram, MessageCircle, Mail, Phone, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-foreground text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,8 +17,7 @@ export default function Footer() {
               <span className="font-fredoka text-2xl text-white">YouAreTheHero</span>
             </Link>
             <p className="text-white/70 leading-relaxed">
-              Criamos histórias mágicas onde seu filho é o protagonista de aventuras incríveis 
-              pela rica cultura brasileira.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a 

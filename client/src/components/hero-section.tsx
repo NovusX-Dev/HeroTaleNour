@@ -1,8 +1,11 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Wand2, Play, Star, BookOpen } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HeroSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="hero-pattern bg-gradient-to-br from-background to-secondary/10 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,13 +13,12 @@ export default function HeroSection() {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="font-poppins text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Seu Filho é o{" "}
-                <span className="text-primary">Herói</span> da{" "}
-                <span className="text-secondary">Aventura!</span>
+                {t('hero.title.1')}{" "}
+                <span className="text-primary">{t('hero.title.2')}</span> {t('hero.title.3')}{" "}
+                <span className="text-secondary">{t('hero.title.4')}</span>
               </h1>
               <p className="text-xl text-foreground/80 leading-relaxed">
-                Crie histórias personalizadas onde seu filho vive aventuras incríveis pela cultura brasileira. 
-                Cada página é uma nova descoberta cheia de magia e aprendizado.
+                {t('hero.subtitle')}
               </p>
             </div>
 
@@ -28,7 +30,7 @@ export default function HeroSection() {
                   data-testid="button-create-now"
                 >
                   <Wand2 className="mr-2 h-5 w-5" />
-                  Criar História Agora
+                  {t('button.createNow')}
                 </Button>
               </Link>
               <Button 
@@ -38,7 +40,7 @@ export default function HeroSection() {
                 data-testid="button-view-example"
               >
                 <Play className="mr-2 h-5 w-5" />
-                Ver Exemplo
+                {t('button.viewExample')}
               </Button>
             </div>
 
@@ -64,7 +66,7 @@ export default function HeroSection() {
                     data-testid="avatar-3"
                   />
                 </div>
-                <span className="text-sm text-foreground/70" data-testid="text-families">+500 famílias felizes</span>
+                <span className="text-sm text-foreground/70" data-testid="text-families">{t('text.families')}</span>
               </div>
               <div className="flex items-center space-x-1 text-secondary">
                 <Star className="h-4 w-4 fill-current" />
@@ -72,7 +74,7 @@ export default function HeroSection() {
                 <Star className="h-4 w-4 fill-current" />
                 <Star className="h-4 w-4 fill-current" />
                 <Star className="h-4 w-4 fill-current" />
-                <span className="text-sm text-foreground/70 ml-2" data-testid="text-rating">4.9/5 estrelas</span>
+                <span className="text-sm text-foreground/70 ml-2" data-testid="text-rating">{t('text.rating')}</span>
               </div>
             </div>
           </div>
@@ -95,8 +97,8 @@ export default function HeroSection() {
                   <BookOpen className="text-white h-6 w-6" />
                 </div>
                 <div>
-                  <p className="font-poppins font-semibold text-foreground" data-testid="text-pages">15 Páginas</p>
-                  <p className="text-sm text-foreground/70" data-testid="text-adventure">De aventura pura!</p>
+                  <p className="font-poppins font-semibold text-foreground" data-testid="text-pages">{t('text.pages')}</p>
+                  <p className="text-sm text-foreground/70" data-testid="text-adventure">{t('text.adventure')}</p>
                 </div>
               </div>
             </div>
