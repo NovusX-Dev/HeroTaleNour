@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&family=Fredoka+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(35, 100%, 97%);
+  --foreground: hsl(17, 36%, 10%);
+  --card: hsl(35, 100%, 97%);
+  --card-foreground: hsl(17, 36%, 10%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(17, 36%, 10%);
+  --primary: hsl(14, 100%, 59%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(33, 96%, 55%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(28, 65%, 25%);
+  --muted-foreground: hsl(17, 36%, 10%);
+  --accent: hsl(354, 79%, 59%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(17, 25%, 90%);
+  --input: hsl(35, 50%, 95%);
+  --ring: hsl(14, 100%, 59%);
+  --chart-1: hsl(14, 100%, 59%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(35, 100%, 97%);
+  --sidebar-foreground: hsl(17, 36%, 10%);
+  --sidebar-primary: hsl(14, 100%, 59%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(33, 96%, 55%);
+  --sidebar-accent-foreground: hsl(0, 0%, 100%);
+  --sidebar-border: hsl(17, 25%, 90%);
+  --sidebar-ring: hsl(14, 100%, 59%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-fredoka: 'Fredoka One', cursive;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: hsl(17, 36%, 10%);
+  --foreground: hsl(35, 100%, 97%);
+  --card: hsl(17, 25%, 15%);
+  --card-foreground: hsl(35, 100%, 90%);
+  --popover: hsl(17, 36%, 10%);
+  --popover-foreground: hsl(35, 100%, 97%);
+  --primary: hsl(14, 100%, 59%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(33, 96%, 55%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(17, 25%, 20%);
+  --muted-foreground: hsl(35, 50%, 70%);
+  --accent: hsl(354, 79%, 59%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(17, 25%, 20%);
+  --input: hsl(17, 25%, 18%);
+  --ring: hsl(14, 100%, 59%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
+
+  .font-fredoka {
+    font-family: var(--font-fredoka);
+  }
+}
+
+@layer utilities {
+  .hero-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6B35' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .animate-bounce-gentle {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0; 
+      transform: translateY(30px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+}
