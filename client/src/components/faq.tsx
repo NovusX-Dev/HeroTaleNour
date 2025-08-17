@@ -26,6 +26,7 @@ const faqs = [
 ];
 
 export default function FAQ() {
+  const { t } = useLanguage();
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (id: number) => {
@@ -41,10 +42,10 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="font-poppins text-4xl font-bold text-foreground">
-            Perguntas Frequentes
+            {t('faq.title')}
           </h2>
           <p className="text-xl text-foreground/70">
-            Tudo que você precisa saber sobre nossos livros personalizados
+            {t('faq.subtitle')}
           </p>
         </div>
 

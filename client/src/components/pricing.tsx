@@ -1,17 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check, Tablet, Book, Shield, Truck, RotateCcw } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Pricing() {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-20 bg-gradient-to-b from-background to-white" id="pricing">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="font-poppins text-4xl font-bold text-foreground">
-            Escolha Seu Formato
+            {t('pricing.title')}
           </h2>
           <p className="text-xl text-foreground/70">
-            Digital para leitura imediata ou impresso para guardar para sempre
+            {t('pricing.subtitle')}
           </p>
         </div>
 
@@ -24,10 +27,10 @@ export default function Pricing() {
               
               <div>
                 <h3 className="font-poppins text-2xl font-bold text-foreground mb-2">
-                  Versão Digital
+                  {t('pricing.digital.title')}
                 </h3>
                 <p className="text-foreground/70">
-                  Acesso imediato em qualquer dispositivo
+                  {t('pricing.digital.subtitle')}
                 </p>
               </div>
 
@@ -58,7 +61,7 @@ export default function Pricing() {
               </div>
 
               <Button className="w-full bg-primary text-white hover:bg-primary/90 font-poppins font-semibold" data-testid="button-choose-digital">
-                Escolher Digital
+                {t('button.chooseDigital')}
               </Button>
             </div>
           </div>
@@ -66,7 +69,7 @@ export default function Pricing() {
           <div className="bg-white rounded-2xl p-8 border-2 border-accent shadow-lg hover:shadow-xl transition-shadow relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <Badge className="bg-accent text-white px-4 py-2">
-                Mais Popular
+                {t('pricing.mostPopular')}
               </Badge>
             </div>
             
@@ -77,10 +80,10 @@ export default function Pricing() {
               
               <div>
                 <h3 className="font-poppins text-2xl font-bold text-foreground mb-2">
-                  Livro Impresso + Digital
+                  {t('pricing.print.title')}
                 </h3>
                 <p className="text-foreground/70">
-                  Livro físico premium + versão digital
+                  {t('pricing.print.subtitle')}
                 </p>
               </div>
 
@@ -116,7 +119,7 @@ export default function Pricing() {
               </div>
 
               <Button className="w-full bg-accent text-white hover:bg-accent/90 font-poppins font-semibold" data-testid="button-choose-print">
-                Escolher Impresso + Digital
+                {t('button.choosePrint')}
               </Button>
             </div>
           </div>

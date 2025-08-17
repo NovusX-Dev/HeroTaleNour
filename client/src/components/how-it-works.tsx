@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Upload, Camera, UserCog, Wand2 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const steps = [
   {
@@ -30,15 +31,17 @@ const steps = [
 ];
 
 export default function HowItWorks() {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-20 bg-gradient-to-b from-background to-white" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="font-poppins text-4xl font-bold text-foreground">
-            Como Funciona
+            {t('howItWorks.title')}
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            Em apenas 4 passos simples, você cria uma história única para seu filho
+            {t('howItWorks.subtitle')}
           </p>
         </div>
 
@@ -55,10 +58,10 @@ export default function HowItWorks() {
               </div>
               <div className="space-y-2">
                 <h3 className="font-poppins text-xl font-semibold text-foreground" data-testid={`step-title-${step.number}`}>
-                  {step.title}
+                  {t(`step.${step.number}.title` as any)}
                 </h3>
                 <p className="text-foreground/70" data-testid={`step-description-${step.number}`}>
-                  {step.description}
+                  {t(`step.${step.number}.description` as any)}
                 </p>
               </div>
             </div>
@@ -68,7 +71,7 @@ export default function HowItWorks() {
         <div className="text-center mt-12">
           <Link href="/create-story">
             <Button size="lg" className="bg-accent text-white hover:bg-accent/90 font-poppins font-semibold shadow-lg" data-testid="button-start-now">
-              Começar Agora - É Grátis Visualizar!
+              {t('button.startNow')}
             </Button>
           </Link>
         </div>

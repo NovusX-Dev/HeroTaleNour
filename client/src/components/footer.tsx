@@ -45,27 +45,27 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-poppins text-lg font-semibold text-white">Produto</h4>
+            <h4 className="font-poppins text-lg font-semibold text-white">{t('footer.product')}</h4>
             <ul className="space-y-2 text-white/70">
-              <li><Link href="/#how-it-works" className="hover:text-white transition-colors" data-testid="footer-how-it-works">Como Funciona</Link></li>
-              <li><Link href="/#stories" className="hover:text-white transition-colors" data-testid="footer-stories">Nossa História</Link></li>
-              <li><Link href="/#pricing" className="hover:text-white transition-colors" data-testid="footer-pricing">Preços</Link></li>
+              <li><Link href="/#how-it-works" className="hover:text-white transition-colors" data-testid="footer-how-it-works">{t('nav.howItWorks')}</Link></li>
+              <li><Link href="/#stories" className="hover:text-white transition-colors" data-testid="footer-stories">{t('nav.stories')}</Link></li>
+              <li><Link href="/#pricing" className="hover:text-white transition-colors" data-testid="footer-pricing">{t('nav.pricing')}</Link></li>
               <li><Link href="/create-story" className="hover:text-white transition-colors" data-testid="footer-examples">Exemplos</Link></li>
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-poppins text-lg font-semibold text-white">Suporte</h4>
+            <h4 className="font-poppins text-lg font-semibold text-white">{t('footer.support')}</h4>
             <ul className="space-y-2 text-white/70">
-              <li><Link href="/#faq" className="hover:text-white transition-colors" data-testid="footer-faq">Central de Ajuda</Link></li>
-              <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-contact">Contato</a></li>
-              <li><Link href="/#faq" className="hover:text-white transition-colors" data-testid="footer-help">FAQ</Link></li>
+              <li><Link href="/#faq" className="hover:text-white transition-colors" data-testid="footer-faq">{t('footer.helpCenter')}</Link></li>
+              <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-contact">{t('footer.contact')}</a></li>
+              <li><Link href="/#faq" className="hover:text-white transition-colors" data-testid="footer-help">{t('nav.faq')}</Link></li>
               <li><a href="#" className="hover:text-white transition-colors" data-testid="footer-tracking">Rastreamento</a></li>
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-poppins text-lg font-semibold text-white">Contato</h4>
+            <h4 className="font-poppins text-lg font-semibold text-white">{t('footer.contact')}</h4>
             <div className="space-y-3 text-white/70">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
@@ -85,11 +85,11 @@ export default function Footer() {
 
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm" data-testid="copyright">
-            © 2024 YouAreTheHero. Todos os direitos reservados.
+            {t('footer.copyright')}
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-white/70 hover:text-white text-sm transition-colors" data-testid="footer-terms">Termos de Uso</a>
-            <a href="#" className="text-white/70 hover:text-white text-sm transition-colors" data-testid="footer-privacy">Política de Privacidade</a>
+            <a href="#" className="text-white/70 hover:text-white text-sm transition-colors" data-testid="footer-terms">{t('footer.terms')}</a>
+            <a href="#" className="text-white/70 hover:text-white text-sm transition-colors" data-testid="footer-privacy">{t('footer.privacy')}</a>
             <a href="#" className="text-white/70 hover:text-white text-sm transition-colors" data-testid="footer-cookies">Cookies</a>
           </div>
         </div>

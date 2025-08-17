@@ -79,6 +79,9 @@ const translations = {
     'footer.product': 'Produto',
     'footer.support': 'Suporte',
     'footer.contact': 'Contato',
+    'footer.helpCenter': 'Central de Ajuda',
+    'footer.terms': 'Termos de Uso',
+    'footer.privacy': 'Política de Privacidade',
     'footer.copyright': '© 2024 YouAreTheHero. Todos os direitos reservados.',
     
     // Create Story Page
@@ -216,6 +219,9 @@ const translations = {
     'footer.product': 'Product',
     'footer.support': 'Support',
     'footer.contact': 'Contact',
+    'footer.helpCenter': 'Help Center',
+    'footer.terms': 'Terms of Use',
+    'footer.privacy': 'Privacy Policy',
     'footer.copyright': '© 2024 YouAreTheHero. All rights reserved.',
     
     // Create Story Page

@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const reviews = [
   {
@@ -28,15 +29,17 @@ const reviews = [
 ];
 
 export default function CustomerReviews() {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <h2 className="font-poppins text-4xl font-bold text-foreground">
-            O Que Dizem Os Pais
+            {t('reviews.title')}
           </h2>
           <p className="text-xl text-foreground/70">
-            Histórias reais de famílias que já viveram essa magia
+            {t('reviews.subtitle')}
           </p>
         </div>
 
